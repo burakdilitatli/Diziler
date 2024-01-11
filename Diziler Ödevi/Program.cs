@@ -27,16 +27,16 @@
                             for (int i = 0; i < quantity;)
                             {
                                 int uni = random.Next(first, last + 1);
-                                int j= 0;
-                                for (j = 0; j < i; j++)
+                                int uni2= 0;
+                                for (uni2 = 0; uni2 < i; uni2++)
                                 {
-                                    if (arr[j] == uni)
+                                    if (arr[uni2] == uni)
                                     {
                                         break;
                                     }
                                 }
 
-                                if (j == i)
+                                if (uni2 == i)
                                 {
                                     arr[i] = uni;
                                     i++;
